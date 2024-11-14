@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Math | TinyThinkers</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #ff6347;
+        }
+        #question-area {
+            margin: 20px auto;
+            max-width: 400px;
+            background-color: #fff4e0;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #answer-input {
+            margin: 20px 0;
+        }
+        input[type="number"] {
+            padding: 10px;
+            width: 150px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Practice Math with TinyThinkers</h1>
+
+    <div id="question-area">
+        <h2 id="question">Solve: </h2>
+        <div id="answer-input">
+            <input type="number" id="answer" placeholder="Your Answer">
+        </div>
+        <button onclick="checkAnswer()">Submit Answer</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        let num1, num2, correctAnswer;
+
+        // Function to generate a random math question (Addition)
+        function generateQuestion() {
+            num1 = Math.floor(Math.random() * 10) + 1;  // Random number between 1 and 10
+            num2 = Math.floor(Math.random() * 10) + 1;  // Random number between 1 and 10
+            correctAnswer = num1 + num2;  // For addition
+
+            document.getElementById("question").innerHTML = `Solve: ${num1} + ${num2}`;
+        }
+
+        // Function to check the answer
+        function checkAnswer() {
+            let userAnswer = document.getElementById("answer").value;
+            
+            if (userAnswer == correctAnswer) {
+                document.getElementById("result").innerHTML = "Correct! Well done!";
+                document.getElementById("result").style.color = "green";
+            } else if (userAnswer != "") {
+                document.getElementById("result").innerHTML = "Incorrect. Try again!";
+                document.getElementById("result").style.color = "red";
+            } else {
+                document.getElementById("result").innerHTML = "Please enter an answer.";
+            }
+        }
+
+        // Generate a question when the page loads
+        generateQuestion();
+    </script>
+
+</body>
+</html>

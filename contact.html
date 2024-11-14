@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid"><!--container start-->
+        <div id="background"><!--bacgroung start-->
+        
+            <div class="row" id="top"><!--top start-->
+                <div class="col-sm-1"></div><!--empty div-->
+                <div class="col-sm-5" id="top_contact">
+                    <span>
+                    <i class="fa-solid fa-question"></i>
+                    Have a Question?</span>
+                    &nbsp;&nbsp;
+                    <span>
+                    <i class="fa-solid fa-phone"></i>
+                    +102 554 5564</span>
+                    &nbsp;&nbsp;
+                    <span> 
+                    <i class="fa-solid fa-envelope"></i>
+                    info@tinythinkers.com</span>
+                </div>
+                <div class="col-sm-3"></div><!--empty div-->
+    
+                <div class="col-sm-2" id="top_btn">
+                    <i class="fa-solid fa-lock"></i>
+                    &nbsp;
+                    <span><a href="#"> Login</a> </span>
+                    &nbsp;&nbsp;
+                    <i class="fa-solid fa-user"></i>
+                    &nbsp;
+                    <span><a href="#">Register</a> </span>
+                </div>
+    
+                <div class="col-sm-1"></div><!--empty div-->
+    
+            </div><!--top end-->
+    
+            <div class="row" id="nav"><!--nav start-->
+                <div class="col-sm-1"></div><!--empty div-->
+                <div class="col-sm-2" id="logo"><!--logo start-->
+                    <b><span id="t">T</span>iny<span id="t" >T</span>hinkers<span id="t">.</span> </b>
+                </div><!--logo end-->
+                <div class="col-sm-6" id="navbar"><!--navbar start-->
+                    
+                    <ul>
+                        <a href="home.html"> <li id="menu">Home</li></a>
+                        <a href="learn.html"> <li id="menu">Learn</li></a>
+                        <a href="price.html"> <li id="menu">Pricing</li></a>
+                        <a href="staff.html"> <li id="menu">Staff</li></a>
+                        <a href="about.html"> <li id="menu">About Us</li></a>
+                        <a href="contact.html"> <li id="menu">Contact Us</li></a>
+                    </ul>
+                </div><!--navbar end-->
+                
+                <div class="col-sm-2" id="btn_nav">
+                    <button>Enroll Now</button>
+                </div>
+    
+                <div class="col-sm-1"></div> <!--empty div-->           
+    
+            </div><!--nav end-->
+            <div class="row" id="our_staff">
+                <div class="col-sm-12">
+                    <h1>
+                        Contact Us
+                    </h1>
+                    <p>
+                        Our team at <span>TinyThinkers</span> consists of skilled educators and child development experts dedicated to creating fun, engaging, and effective learning experiences. We're passionate about helping children grow in a nurturing and supportive environment.
+                    </p>
+                    <button id="explore">Contact Us</button>
+                </div>
+           </div>
+    
+        </div><!--background end-->
+            <!--header end-->
+<br><br><br>
+<div class="row">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-container">
+            <div class="form-container">
+                <h2>Get in Touch</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" id="contact-btn" onclick="send()">Send</button>
+                </form>
+            </div>
+            <script>
+                function send(){
+                    var name = document.getElementById("name").value;
+                    var email = document.getElementById("email").value;
+                    document.write(
+                       ` <div id="div1">
+                    <h1 style="color: white;
+                                background-color: #dc3545 ;
+                                padding: 10px 50px;"
+                                font-family:"Poppins", sans-serif> 
+                        Thank You <br>
+                        ${name}
+                    </h1>
+                    <span>
+                        We will get back to you on your provided email adress ${email} as soon as possible. 
+                    </span>
+                </div>`
+                    );
+                }
+            </script>
+    
+            <div class="map-container">
+                <h2>Find Us Here</h2>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509129!2d144.95373531531688!3d-37.81627927975138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f4dbb2d%3A0x5045675218ceeda!2sYour%20Location!5e0!3m2!1sen!2sus!4v1612345678901!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+</div>
+
+
+<br><br><br>
+
+            <!--footer start-->
+        <div class="row" id="footer">
+            <div class="col-sm-1"></div><!--empty div-->
+            <div class="col-sm-3" id="about_tt">
+                <p><b>
+                    About
+                </b>
+                <br><br>
+                TinyThinkers is an interactive learning platform designed to inspire creativity, curiosity, and skill-building in children through fun and engaging lessons, games, and activities.
+                <br><br><br><br>
+                <strong>
+                    Connect
+                </strong> <br><br>
+               <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+               <a href="#"> <i class="fa-brands fa-facebook-messenger"></i></a>
+               <a href="#"> <i class="fa-solid fa-envelope"></i></a>
+               <a href="#"> <i class="fa-brands fa-square-instagram"></i></a>
+               <a href=""><i class="fa-solid fa-phone"></i></a>
+                </p>
+            </div>
+            <div class="col-sm-2" id="links">
+                <p><b>
+                    Navigation
+                </b>
+                </p>
+                <ul>
+                    <a href="home.html"> <li id="menu">Home</li></a>
+                    <a href="learn.html"> <li id="menu">Learn</li></a>
+                    <a href="price.html"> <li id="menu">Pricing</li></a>
+                    <a href="staff.html"> <li id="menu">Staff</li></a>
+                    <a href="about.html"> <li id="menu">About Us</li></a>
+                    <a href="contact.html"> <li id="menu">Contact Us</li></a>
+                </ul>
+            </div>
+            <div class="col-sm-3" id="gallery">
+                <p><b>
+                    Gallery
+                </b>
+                </p>
+                <div class="row" id="g_row">
+                    <div class="col-sm-3" id="g_img">
+                        <img src="about_1.jpg" alt="" height="65" width="65" >
+                    </div>
+                    <div class="col-sm-3" id="g_img">
+                        <img src="d.jpg" alt="" height="65" width="65" >
+                    </div>
+                    <div class="col-sm-3" id="g_img">
+                        <img src="b.jpg" alt="" height="65" width="65" >
+                    </div>
+                </div>
+                
+                <div class="row" id="g_row">
+                    <div class="col-sm-3" id="g_img">
+                        <img src="c.jpg" alt="" height="65" width="65" >
+                    </div>
+                    <div class="col-sm-3" id="g_img">
+                        <img src="e.avif" alt="" height="65" width="65" >
+                    </div>
+                    <div class="col-sm-3" id="g_img">
+                        <img src="f.avif" alt="" height="65" width="65" >
+                    </div>
+                </div>
+            </div><!--gallery end-->
+            <div class="col-sm-2" id="contact">
+                <p><b>
+                    Contact
+                </b>
+                </p>
+                <span>
+                   <h5> 43 Raymouth Rd. Baltemoer, London 3910 </h5> <br>
+                        +1(123)-456-7890 <br>
+                        +1(123)-456-7890 <br>
+                        <br><br>
+                      <h6>  info@mydomain.com </h6> <br>
+                </span>
+            </div>
+            <div class="col-sm-1"></div><!--empty div-->
+
+        </div>
+        <div class="row" id="footer_end">
+            <div class="col-sm-12">
+                <span>
+                    Copyright ©2024 All rights reserved | This template is made with
+                    <i class="fa-solid fa-heart"></i> by 
+                </span>
+            </div>
+        </div>
+        <!--footer end-->
+    </div><!--container end-->
+</body>
+</html>
+ 
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>TinyThinkers Gallery</title>
+    <style>
+        #container-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        #container-gallery img {
+            width: 30%;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        #container-gallery img:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            #container-gallery img {
+                width: 45%;
+            }
+        }
+        @media (max-width: 480px) {
+            #container-gallery img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center my-4">TinyThinkers Gallery</h1>
+    <div id="container-gallery">
+        <img id="img-1" src="https://via.placeholder.com/400" alt="Gallery Image 1">
+        <img id="img-2" src="https://via.placeholder.com/400" alt="Gallery Image 2">
+        <img id="img-3" src="https://via.placeholder.com/400" alt="Gallery Image 3">
+        <img id="img-4" src="https://via.placeholder.com/400" alt="Gallery Image 4">
+        <img id="img-5" src="https://via.placeholder.com/400" alt="Gallery Image 5">
+        <img id="img-6" src="https://via.placeholder.com/400" alt="Gallery Image 6">
+        <img id="img-7" src="https://via.placeholder.com/400" alt="Gallery Image 7">
+        <img id="img-8" src="https://via.placeholder.com/400" alt="Gallery Image 8">
+        <img id="img-9" src="https://via.placeholder.com/400" alt="Gallery Image 9">
+        <img id="img-10" src="https://via.placeholder.com/400" alt="Gallery Image 10">
+        <img id="img-11" src="https://via.placeholder.com/400" alt="Gallery Image 11">
+        <img id="img-12" src="https://via.placeholder.com/400" alt="Gallery Image 12">
+        <img id="img-13" src="https://via.placeholder.com/400" alt="Gallery Image 13">
+        <img id="img-14" src="https://via.placeholder.com/400" alt="Gallery Image 14">
+        <img id="img-15" src="https://via.placeholder.com/400" alt="Gallery Image 15">
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
